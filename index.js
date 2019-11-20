@@ -1,4 +1,4 @@
-#!/bin/sh/env node
+#!/usr/bin/env node
 
 const os = require('os');
 const chalk = require('chalk');
@@ -12,7 +12,12 @@ const options = yargs.usage('Usage: -n <name>').option('s', {
     description: 'Search term',
     type: 'string',
     demandOption: true
-}).argv;
+}).option('l', {
+    alias: 'limit',
+    description: 'Limit of quote',
+    type: 'string',
+    demandOption: false
+}).argv
 
 // say Hello to the user
 log(
@@ -24,7 +29,8 @@ log(
 );
 
 const {
-    search
+    search,
+    limit = 5
 } = options;
 
 fetch(search)
@@ -32,7 +38,7 @@ fetch(search)
         const {
             quotes
         } = res
-        const text = transform(quotes)
+        const text = transform(quotes.slice(0, limit))
         log(text)
     })
     .catch(err => log(err));
