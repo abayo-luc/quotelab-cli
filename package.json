@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/abayo-luc/quotelab-cli#readme",
   "bin": {
-    "quotelab-cli": "./index.js"
+    "qlb": "./index.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
