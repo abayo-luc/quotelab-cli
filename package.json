@@ -1,6 +1,6 @@
 {
-  "name": "@abayo-luc/quotelab-cli",
-  "version": "1.0.0",
+  "name": "quotelab-cli",
+  "version": "1.0.3",
   "description": "Search quotes about any topic with your Command Line directly from your local machine. ",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,5 @@
     "node-emoji": "^1.10.0",
     "yargs": "^15.0.2"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "devDependencies": {}
 }
