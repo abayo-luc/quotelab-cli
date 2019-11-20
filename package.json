@@ -1,5 +1,5 @@
 {
-  "name": "quotelab-cli",
+  "name": "@abayo-luc/quotelab-cli",
   "version": "1.0.0",
   "description": "Search quotes about any topic with your Command Line directly from your local machine. ",
   "main": "index.js",
