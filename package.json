@@ -24,7 +24,7 @@
     "qlb": "./index.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "chalk": "^3.0.0",
     "node-emoji": "^1.10.0",
     "yargs": "^15.0.2"
